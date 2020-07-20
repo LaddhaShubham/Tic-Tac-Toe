@@ -13,6 +13,7 @@ export default class App extends React.Component {
     }
   }
 
+  //this function is used to click on box item
   boxItemClicked = itemPosition => {
     if (this.state.winMessage === "") {
      if(itemArr[itemPosition] === "") {
@@ -24,7 +25,7 @@ export default class App extends React.Component {
   }
 
 
-  //Item Icon Choose - Good
+  //this function is used to choose icon inside box
   chooseItemIcon = itemPosition => {
     if (itemArr[itemPosition] !== "") {
        return itemArr[itemPosition] ? require("./src/images/cross.png") : require("./src/images/zero.png")
